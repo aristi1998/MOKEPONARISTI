@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JUEGO DE MOKEPON</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+
+    <body>
+        <section id="seleccionar-mokepon">
+            <h1 class="titulo">MOKEPON</h1>
+
+            <h2 class="subtitulo">ELIGE TU MOKEPON</h2>
+            
+            <div id='contenedor-tarjetas-mokepon' class="tarjetas-mokepones">
+              
+            </div>
+
+            <button id="boton-mokepon-jugador">LISTO</button>
+        </section>
+
+        <section id="ver-mapa">
+            <h1 class="titulo">RECORRE EL MAPA CON TU MOKEPON</h1>
+            <canvas id="mapa"></canvas>
+            <div>
+                <button     
+                onmouseup="detenerMovimiento()" 
+                ontouchend="detenerMovimiento()"
+                onmousedown="moverArriba()"
+                ontouchstart="moverArriba()"
+                >ARRIBA</button>
+            </div>
+            <div class="izqder">
+                <button 
+                onmouseup="detenerMovimiento()" 
+                ontouchend="detenerMovimiento()"
+                onmousedown="moverIzquierda()"
+                ontouchstart="moverIzquierda()"
+                >IZQUIERDA</button>
+                <button
+                onmouseup="detenerMovimiento()"
+                ontouchend="detenerMovimiento()"
+                onmousedown="moverDerecha()"
+                ontouchstart="moverDerecha()"
+                >DERECHA</button>
+            </div>
+            <div>
+                <button 
+                onmouseup="detenerMovimiento()"
+                ontouchend="detenerMovimiento()"
+                onmousedown="moverAbajo()"
+                ontouchstart="moverAbajo()"
+                >ABAJO</button>
+            </div>
+        </section>
+
+        <section id="seleccionar-ataque"> 
+            <h1 class="titulo">MOKEPON</h1>
+
+            <h2 class="subtitulo">ELIGE TU ATAQUE</h2>
+
+            <div id='contenedor-ataques-mokepon' class="tarjetas-ataques">
+
+            </div>
+
+            <div id="mensajes">
+                    <p id="resultado"> MUCHA SUERTE </p>
+
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">REINICIAR</button>
+                </section>
+            </div>
+
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id="vidas-jugador">0</p>
+                    <p id="mokepon-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
+                <div class="ataques-enemigo">
+                    <p id="vidas-enemigo">0</p>
+                    <p id="mokepon-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+            </div>  
+        </section>
+        <script src="./jsmokepon2.js"></script>
+    </body>
+</html>

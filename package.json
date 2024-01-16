@@ -1,0 +1,26 @@
+{
+  "name": "juego_mokepon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aristi1998/MOKEPONARISTI.git"
+  },
+  "keywords": [
+    "mokepon"
+  ],
+  "author": "DANIEL ARISTIZABAL DUQUE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aristi1998/MOKEPONARISTI/issues"
+  },
+  "homepage": "https://github.com/aristi1998/MOKEPONARISTI#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
